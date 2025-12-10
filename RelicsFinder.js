@@ -9,9 +9,6 @@
 var scriptData = {
     name: 'Clear Barbarian Relics',
     version: 'v1.7.0',
-    author: 'lMini',
-    authorUrl: 'https://twscripts.dev/',
-    helpLink: 'https://tribalwars-bots.vercel.app',
 };
 
 // User Input
@@ -221,11 +218,7 @@ function renderUI(body) {
                 ${body}
             </div>
             <div class="ra-clear-barbs-walls-footer">
-                <small>
-                    <strong>${tt(scriptData.name)} ${scriptData.version}</strong> -
-                    <a href="${scriptData.authorUrl}" target="_blank" rel="noreferrer noopener">${scriptData.author}</a> -
-                    <a href="${scriptData.helpLink}" target="_blank" rel="noreferrer noopener">${tt('Help')}</a>
-                </small>
+              
             </div>
         </div>
         <style>
@@ -597,8 +590,7 @@ function scriptInfo() {
 
 function initDebug() {
     console.debug(`${scriptInfo()} It works 🚀!`);
-    console.debug(`${scriptInfo()} HELP:`, scriptData.helpLink);
-    if (1) {
+   
         console.debug(`${scriptInfo()} Market:`, game_data.market);
         console.debug(`${scriptInfo()} World:`, game_data.world);
         console.debug(`${scriptInfo()} Screen:`, game_data.screen);
@@ -606,7 +598,7 @@ function initDebug() {
         console.debug(`${scriptInfo()} Game Build:`, game_data.version);
         console.debug(`${scriptInfo()} Locale:`, game_data.locale);
         console.debug(`${scriptInfo()} Premium:`, game_data.features.Premium.active);
-    }
+  
 }
 
 function tt(string) {
