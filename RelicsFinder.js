@@ -15,7 +15,7 @@ var scriptData = {
 };
 
 // User Input
-if (typeof DEBUG !== 'boolean') DEBUG = false;
+//if (typeof DEBUG !== 'boolean') DEBUG = false;
 
 // Globals
 var ALLOWED_GAME_SCREENS = ['map'];
@@ -598,7 +598,7 @@ function scriptInfo() {
 function initDebug() {
     console.debug(`${scriptInfo()} It works 🚀!`);
     console.debug(`${scriptInfo()} HELP:`, scriptData.helpLink);
-    if (DEBUG) {
+    if (1) {
         console.debug(`${scriptInfo()} Market:`, game_data.market);
         console.debug(`${scriptInfo()} World:`, game_data.world);
         console.debug(`${scriptInfo()} Screen:`, game_data.screen);
